@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "294660968790",
+    "project_id": "prolinkup-aad2e",
+    "storage_bucket": "prolinkup-aad2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294660968790:android:da5935a4be05c09bbcc6f7",
+        "android_client_info": {
+          "package_name": "com.businesstinder.prolinkup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoebVXPEhugWv9iNo8n1PmDTV5trjSoAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

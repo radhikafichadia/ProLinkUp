@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background"
+    tools:context=".PersonLoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:text="Enter Job information to post for your company:">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Color_blue_light"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Company Name"
+                    android:layout_marginHorizontal="8dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <ImageView
+                    android:id="@+id/companyImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/common_google_signin_btn_icon_dark"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Upload Image"/>
+
+                <EditText
+                    android:id="@+id/companyDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Company Description" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/companyJobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Available Job Title"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/companyJobType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginTop="20dp"
+                            android:text="Job Type          :"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <EditText
+                            android:id="@+id/companyJobTypeText"
+                            android:layout_width="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:textSize="16sp"
+                            android:hint="Full-Time, Hybrid/Remote" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/companySkills"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginTop="20dp"
+                            android:text="Skills                  :"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <EditText
+                            android:id="@+id/companySkillsText"
+                            android:layout_width="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:textSize="16sp"
+                            android:hint="Skills" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/salary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginTop="20dp"
+                            android:text="Salary                :"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <EditText
+                            android:id="@+id/salaryText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:textSize="16sp"
+                            android:layout_marginTop="20dp"
+                            android:hint="100,000-120,000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/companyLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginTop="20dp"
+                            android:text="Location            :"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <EditText
+                            android:id="@+id/companyLocationText"
+                            android:layout_width="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:hint="Location"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/companyJobDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Job Description :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/companyJobDescText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Job Description"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/companyRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Responsibilities :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/companyResText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Responsibilities"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/companyQual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Qualifications :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/companyQualText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Qualifications"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/benefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Benifits and Compensation :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/benefitsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Benefits and Compensation"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        tools:ignore="TextContrastCheck" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
